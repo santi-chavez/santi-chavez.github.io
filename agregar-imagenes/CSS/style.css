@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEader o Cabecera*/
+.header{
+    padding: 0 .5rem;
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../img/bg.jpg);
+    background-image: linear-gradient(135deg, #667eea69 0%rgba(118, 75, 162, 0.377)a2 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+img{
+    background-color: purple;
+}
+.menu{
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.section{
+  background-image:url(../img/aaaa.jpg);
+}
+.menu a{
+    color: rgb(0, 0, 0);
+    margin-left: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.sensores{
+    padding: 20px;
+    text-align: center;
+}
+.title{
+    margin: 30px;
+    font-size: 40px;
+}
+.servicio__titulo{
+text-align: center;
+font-size: 50px;
+}
+h2{
+    text-align: center;
+}
+/*Cards*/
+.card{
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+}
+.card-bg{
+    background-image: url(../img/sensores2.jpg);
+    background-position: center;
+}
+.card-bg1{
+    background-image: url(../img/cortina.jpg);
+}
+.card-bg2{
+    background-image: url(../img/mesa.jpg);
+}
+.card-bg3{
+    background-image: url(../img/luces2.jpg);
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .4);
+    opacity: 0;
+    transition: .5s;
+    padding: 20px;
+}
+
+
+.card:hover .content{
+    opacity: 1;   
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cta{
+  text-decoration: none;
+  color:white
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    height: 85px;
+}
+body{
+    background-color: rgb(96, 23, 165);
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #a31717;
+  color: rgb(5, 5, 5);
+  padding: 70px 70px;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+}
+
+button:hover {
+  opacity: 0.8;
+  text-align: center;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+ 
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/*sobrenosotros*/
+.Mision{ 
+  position: absolute;
+  top: 260px;
+  right: 100px;
+  font-size: 50px;
+}
+.textmision{
+  position: absolute;
+  right: 2px;
+  width: 300px;
+  top: 350px;
+  line-height: 50px;
+  line-height: 1.25;
+display: inline-block;
+vertical-align: middle;
+font-family: 'Courier New', Courier, monospace;
+color: rgb(221, 210, 210);
+}
+.Vision{
+  position: absolute;
+  top: 260px;
+  left: 70px;
+  font-size: 50px;
+}
+.textvision{
+  position: absolute;
+  left: 2px;
+  width: 300px;
+  top: 350px;
+  line-height: 50px;
+  line-height: 1.25;
+display: inline-block;
+vertical-align: middle;
+font-family: 'Courier New', Courier, monospace;
+color: rgb(221, 210, 210);
+}
+.aeiou{
+  border-radius: 50%;
+}
+
+
+.button{
+  margin: 0 auto;
+}
+.footerimage{
+  right: 100px;
+  font-size: 100px;
+  text-align: center;
+  border-radius: 50%;
+
+}
+.footer{
+  color:black;
+  font-size: 30px;
+  position: absolute;
+  left: 70px;
+  text-align: center;
+  text-justify: auto;
+
+}

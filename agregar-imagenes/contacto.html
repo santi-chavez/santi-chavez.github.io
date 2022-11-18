@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title class="title">Contacto</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+  <body>
+    <nav class="menu">
+    <a href="inicio.html"><i class="fa fa-home"></i></a>
+    <a href="sobrenosotros.html"><i class="fa-solid fa-user"></i></a>
+    <a href="contacto.html"><i class="fa-solid fa-phone"></i></a>
+  </nav> 
+  
+    
+  <h1 class="logo">Casamy</h1>
+  
+  <h2>Nos puedes contactar por medio de los siguientes sitios</h2>
+<b style="height: 40">
+  <button class="button" onclick="document.getElementById('id01').style.display='block'" style="width: 300px;"><h1>Login</h1></button>
+  
+  <div id="id01" class="modal">
+   
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img/avatar2.jpg" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Nombre</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+         
+        <button type="submit">inicia sesión</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> ¿quieres guardar la contraseña?
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+        <span class="psw"><a href="#">¿olvidaste la contraseña?</a></span>
+      </div>
+    </form>
+  </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script> 
+    </b>
+  </body>

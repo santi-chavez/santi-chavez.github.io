@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title class="title">sobre nosotros</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <header class="header">
+      <p class="logo">Casamy</p>
+      <nav class="menu">
+        <a href="inicio.html"><i class="fa fa-home"></i></a>
+        <a href="sobrenosotros.html"><i class="fa-solid fa-user"></i></a>
+        <a href="contacto.html"><i class="fa-solid fa-phone"></i></a>
+      </nav> 
+    </header>
+    <main>            
+      <section>
+            <br>
+            </p>
+            <h1 class="Mision">Misión</h1>
+                  <div class="textmision"> esta empresa busca implementar productos tecmologicos con objetos reciclables que ayuden a modernizar eñ hogar de los habitantes de Buenaventura,teniendo en cuenta los gustos de los compradores. 
+            </div>
+            <h1 class="Vision">Visión </h1> 
+                  <div class="textvision">en el 2026 ser una de las empresas mejor posicionadas en el estatus del mercadeo vendiendo productos diariamente,causando gran impacto en la sociedad.
+                  </div>
+      </section>
+  </main>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+  
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    // Get the modal
+    var modal = document.getElementById('id01');
+  
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  </div>
+  <footer class="footer">
+            Hecho por Santiago chavez
+            <br>
+            <br>
+            Contáctanos en: Facebook: Casamy Instagram: Casamy_decoraciones y WhatsApp: 320 3371 609
+            <i class="glyphicon glyphicon-thumbs-up"></i>
+  </footer>
+  </body>
+  </html>
+
+  </body>
